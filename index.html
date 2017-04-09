@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<title>Zonal 2k17</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="C:\Users\harshit pandey\Desktop\zonal 2k17\football.ico" >
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("C:/Users/harshit pandey/Desktop/zonal 2k17/background1.jpeg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("C:/Users/harshit pandey/Desktop/zonal 2k17/cricket.jpg");
+    min-height: 650px;
+    opacity: 1.0;
+}
+/*for small devices*/
+.bgimg-3 {
+    background-image: url("C:/Users/harshit pandey/Desktop/zonal 2k17/cricket.jpg");
+    min-height: 500px;
+    opacity: 1.0;
+}
+
+
+.modal {
+    margin-top: -0px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal {
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#floating-button {
+  width: 200px;
+  height: 70px;
+  background: #db4437;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+}
+
+
+#floating-button-1 {
+  width: 130px;
+  height: 70px;
+  background: #db4437;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+}
+
+/* Modal Content */
+.modal-content  {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close ,.close1 ,.close2 ,.close3 ,.close4,.close5 ,.close6 ,.close7,.close9,.close10 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover ,.close1:hover ,.close2:hover ,.close3:hover ,.close4:hover,.close5:hover ,.close6:hover ,.close7:hover ,.close9:hover ,.close10:hover ,
+ .close:focus , .close1:focus, .close2:focus, .close3:focus, .close4:focus, .close5:focus, .close6:focus , .close7:focus, .close9:focus, .close10:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+.w3-allerta {
+  font-family: "Allerta Stencil", Sans-serif;
+}
+.w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.w3-lobster {
+    font-family: "Lobster", serif;
+}
+
+.w3-sidenav {width: 120px;background: #222;}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" >
+
+<!--______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+                                                              <!--side bar-->
+
+
+<nav class="w3-sidenav w3-center w3-small w3-hide-medium w3-hide-small" style="width: 110px;">
+ <div style="height: 145px"> <img src="C:/Users/harshit pandey/Desktop/zonal 2k17\icon.png" style="margin-top: 17px; width:100% ; height:100px"></div>
+  <a class="w3-padding-large w3-black w3-hover-gray" href="#">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a class="w3-padding-large w3-hover-gray" href="#about" id="hide">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>RULE BOOK</p>
+  </a>
+  <a class="w3-padding-large w3-hover-gray" href="#rewards">
+    <i class="fa fa-gift w3-xxlarge"></i>
+    <p>REWARDS</p>
+  </a>
+  <a class="w3-padding-large w3-hover-gray" href="#contact">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+ <div class="w3-hide-small w3-hide-medium w3-hover-grey w3-center" id="floating-button"> 
+     <a class="w3-text-black w3-large w3-myfont w3-animate-opacity" style="margin-top: 3px;">Mandatory Instructions</a></div>
+     <div id="myModal9" class="modal"> 
+                                                <!-- Modal content -->
+              <div class="w3-animate-top modal-content w3-light-grey">
+              <span class="close9">&times;</span>
+              <ol>
+                 <li>All the teams must be accompanied by the manager/coach.</li>
+                 <li>All the players should show their ID cards to the committee before the match. Without ID, players will not be allowed to participate in matches.</li>
+                 <li>All the players should be in proper sports kit.</li>
+                 <li>In case of any indiscipline, which includes the use of abusive language etc., the committee/umpire has the authority to disqualify/penalize the concerned team.</li>
+                 <li>The organizing committee shall not be responsible for any kind of injury during the tournament.</li>
+                 <li>Teams playing a match should report at the venue 15 minutes before the commencement of the match.</li>
+                 <li>The tournament will be held from 13 th Feb 2017 to 15 th Feb 2017 and begin at 8:00 a.m.</li>
+             </ol>
+             </div>
+          </div>
+ <div class="w3-hide-large w3-hover-grey w3-center" id="floating-button-1"> 
+     <a class="w3-text-black w3-medium w3-myfont w3-animate-opacity" style="margin-top: 3px;">Mandatory Instructions</a></div>
+     <div id="myModal10" class="modal"> 
+                                                <!-- Modal content -->
+              <div class="w3-animate-top modal-content w3-light-grey">
+              <span class="close10">&times;</span>
+              <ol>
+                 <li>All the teams must be accompanied by the manager/coach.</li>
+                 <li>All the players should show their ID cards to the committee before the match. Without ID, players will not be allowed to participate in matches.</li>
+                 <li>All the players should be in proper sports kit.</li>
+                 <li>In case of any indiscipline, which includes the use of abusive language etc., the committee/umpire has the authority to disqualify/penalize the concerned team.</li>
+                 <li>The organizing committee shall not be responsible for any kind of injury during the tournament.</li>
+                 <li>Teams playing a match should report at the venue 15 minutes before the commencement of the match.</li>
+                 <li>The tournament will be held from 13 th Feb 2017 to 15 th Feb 2017 and begin at 8:00 a.m.</li>
+             </ol>
+             </div>
+          </div>
+
+
+<!--______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+                                                  <!-- Navbar on small screens -->
+  
+
+  <div id="navDemo" class=" w3-hide-large ">
+    <ul class="w3-navbar w3-text-black w3-allerta w3-xlarge w3-left-align w3-light-grey">
+      <li>
+           <p class="w3-navbar  w3-text-black w3-allerta w3-xlarge w3-slim"  style=" word-spacing: 6px; margin-top:3px; margin-bottom:5px; margin-left:-2px;">AKTU ZONAL SPORTS FEST</p>
+      </li>
+    </ul>
+  </div>
+ 
+                                                  <!-- Navbar on large screens -->
+  
+
+   <ul class="w3-navbar w3-hide-small w3-hide-medium w3-navbar w3-light-grey w3-text-black w3-opacity bgimg-1 w3-display-container w3-opacity-min " style="">
+      <li>
+      <p class=" w3-allerta w3-xxlarge w3-slim"  style="word-spacing: 15px; margin-top:10px; margin-bottom:5px; margin-left:160px;">AKTU ZONAL SPORTS FEST</p>
+      </li>
+      <li>
+        <p class="w3-medium w3-myfont" style="margin-left:190px"><a> Organised By: ABES ENGINEERING COLLEGE, GHAZIABAD</a></p>
+      </li>
+  </ul>
+</div>
+
+<!--________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-hide-small w3-hide-medium w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <a href="https://docs.google.com/forms/d/1WMIsLfX5E03iHr08a5E3gRjmK-AkR0v0fQcsKc8QWmM/prefill" target="blank"><span class=" w3-myfont w3-btn w3-center w3-padding-xlarge w3-black w3-xlarge w3-hover-grey w3-wide w3-animate-opacity">Register Now</span></a>
+  </div>
+</div>
+  
+
+                                                          <!--small screen-->
+
+<div class="bgimg-1 w3-hide-large w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <a href="https://docs.google.com/forms/d/1WMIsLfX5E03iHr08a5E3gRjmK-AkR0v0fQcsKc8QWmM/prefill" target="blank"><span class="w3-myfont w3-btn w3-center w3-padding-xlarge w3-black w3-medium w3-hover-grey w3-wide w3-animate-opacity">Register Now</span></a>
+  </div>
+</div>                                                          
+
+<!--________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+<!-- Container (Rule book) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+
+<div class="w3-hide-medium w3-hide-small">
+  <h3 class="w3-center w3-text-black w3-jumbo w3-myfont">Rule Book</h3>
+<div class="w3-btn-group w3-padding-large" style="margin-top: 20px; margin-left: 40px">
+      <button class="w3-btn w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-top" id="myBtn" >VOLLEYBALL</button>
+          <div id="myModal" class="modal"> 
+                                                <!-- Modal content -->
+              <div class="w3-animate-top modal-content w3-light-grey">
+              <span class="close">&times;</span>
+              <ol>
+                 <li>Min 6 players and max 10 players should be there in the team.</li>
+                 <li>Officials decision will be final.</li>
+                 <li>Each game will be of 3 sets.</li>
+                 <li>Rest of the rules will be told at the time of the match.</li>
+             </ol>
+             </div>
+          </div>        
+
+          <button class="w3-btn w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-bottom" id="myBtn1" style="margin-left: 55px">FOOTBALL</button>
+             <div id="myModal1" class="modal"> 
+                                                    <!-- Modal content -->
+                 <div class="w3-animate-top modal-content w3-light-grey">
+                     <span class="close1">&times;</span>
+                  <ol>
+                      <li>12 players should be there in each team (9 playing+3 extras).</li>
+                      <li>Officials decision will be final.</li>
+                      <li>2 halves will be there of 20 minutes each.</li>
+                      <li>Rest of the rules will be told at the time of the match.</li>
+                      <li>It will be a knockout tournament.</li>
+                  </ol>
+                 </div>
+             </div>
+
+       
+         <button class="w3-btn w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-left" id="myBtn2" style="margin-left: 50px">BASKETBALL</button>
+            <div id="myModal2" class="modal"> 
+                                                   
+                                                   <!-- Modal content -->
+                <div class="w3-animate-top modal-content w3-light-grey">
+                    <span class="close2">&times;</span>
+                 <ol>
+                      <li>10 players should be there in each team.</li>
+                      <li>Officials decision will be final.</li>
+                      <li>Each quarter will be of 8 minutes.</li>
+                      <li>FIBA rules and regulations will be followed</li>
+                      <li>Rest of the rules will be told at the time of the match.</li>
+                </ol>
+               </div>
+           </div>
+</div>
+<br>
+<div class="w3-btn-group w3-padding-large" style="margin-top: 20px; margin-left: 30px">
+    <button class="w3-btn w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-right" id="myBtn3" style="margin-left: 8px">BADMINTON</button>
+        <div id="myModal3" class="modal"> 
+                                            
+                                                 <!-- Modal content -->
+               <div class="w3-animate-top modal-content w3-light-grey">
+               <span class="close3">&times;</span>
+                 <ol>
+                      <li>Max 8 players are allowed in a team (4 boys+4 girls).</li>
+                      <li>Officials decision will be final and no one should make objection for that.</li>
+                      <li>It will be an individual event.</li>
+                      <li>There will be knockout matches.</li>
+                      <li>Rest of the rules will be told by the officials at the time of the match.</li>
+                </ol>
+               </div>
+       </div>
+
+    <button class="w3-btn w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-top" id="myBtn4" style="margin-left: 58px">ATHLETICS</button>
+        <div id="myModal4" class="modal"> 
+                                   
+                                          <!-- Modal content -->
+           <div class="w3-animate-top modal-content w3-light-grey">
+               <span class="close4">&times;</span>
+             <ol>
+                 <li>A team of 15 members (10 boys+5 girls) are allowed from one institution.</li>
+                 <li>Officials decision will be final.</li>
+                 <li>Further the rules will be told by the officials at the time of the event.</li>
+             </ol>
+           </div>
+        </div> 
+    
+     <button class="w3-btn w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-left" id="myBtn5" style="margin-left: 45px">CRICKET</button>
+             <div id="myModal5" class="modal">
+                                                   
+                                                    <!-- Modal content -->
+                 <div class="w3-animate-top modal-content w3-light-grey">
+                  <span class="close5">&times;</span>
+                    <ol>
+                         <li>All the matches will be played by leather ball.</li>
+                         <li>Every team must bring their own kit.</li>
+                         <li>12 members should be there in each team.</li>
+                         <li>8-8 overs should be played by each team.</li>
+                         <li>Umpires decision will be final.</li>
+                         <li>Rest of the rules will be told at the time of the Match.</li>
+                   </ol>
+                </div>
+            </div>
+    </div>
+    
+</div>
+
+
+<div class="w3-btn-group w3-hide-medium w3-padding-large" style="margin-top: 20px; margin-left: 10px">
+
+    <button class="w3-btn w3-hide-small w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-bottom" id="myBtn6" style="margin-left: 30px">TABLE TENNIS</button>
+            <div id="myModal6" class="modal"> 
+                                      <!-- Modal content -->
+                <div class="w3-animate-top modal-content w3-light-grey">
+                   <span class="close6">&times;</span>
+                <ol>
+                    <li>A team of 15 members (10 boys+5 girls) are allowed from one institution.</li>
+                    <li>Officials decision will be final.</li>
+                    <li>Further the rules will be told by the officials at the time of the event.</li>
+               </ol>
+               </div>
+            </div>
+    
+    <button class="w3-btn w3-hide-small w3-hover-gray w3-xlarge w3-wide w3-round-large w3-animate-bottom" id="myBtn7" style="margin-left: 25px">CHESS</button>
+            <div id="myModal7" class="modal"> 
+                                      <!-- Modal content -->
+                <div class="w3-animate-top modal-content w3-light-grey">
+                   <span class="close7">&times;</span>
+                <ol>
+                       <li> Standard rules will be  followed.</li>
+                       <li> Further rules will be intimated on arrival</li>
+                       </ol>
+               </div>
+            </div>            
+</div>
+
+    <a href="C:/Users/harshit pandey/Desktop/zonal 2k17/zonals1.pdf" target="blank" ><span class="w3-myfont w3-hide-large w3-btn w3-center  w3-padding-large w3-black w3-medium w3-hover-grey w3-wide w3-animate-opacity" style="margin-top: 50px;margin-left: 50px;">Rule book</span></a>
+
+</div>
+<!--small screens_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+<!--_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+ 
+ <div id="rewards" style="margin-top: 100px;">
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-hide-small w3-hide-medium w3-hide-medium w3-display-container w3-opacity-min" style="margin-top: 80px;" >
+  <div class="w3-display-middle ">
+     <a class="" href="C:/Users/harshit pandey/Desktop/zonal 2k17/zonals.pdf" target="blank"><span class="w3-btn w3-hover-grey w3-xxlarge w3-padding-small w3-black w3-text-white w3-wide" style="margin-top: 10px; ">Medals</span></a>
+    </div>
+</div>
+
+<!-- small screen-->
+<div class="bgimg-3 w3-hide-large  w3-padding-small w3-display-container w3-opacity-min" style="margin-top: -50px;">
+
+    <a class="" href="C:/Users/harshit pandey/Desktop/zonal 2k17/zonals.pdf" target="blank"><span class="w3-btn w3-hover-grey w3-large w3-padding-large w3-black w3-text-white w3-wide" style="margin-top: 180px; margin-left: 60px ">Medals</span></a>
+  
+  </div>
+</div>
+
+ <!-- Contact Section -->
+  <div class="w3-padding-48 w3-hide-small w3-hide-medium w3-content w3-text-black" id="contact">
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-allerta w3-wide w3-xlarge" style="margin-top: 50px;">Lets get in touch. Send me a message:</p>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xlarge w3-margin-right"></i>
+      <a href="https://www.google.co.in/maps/dir/''/abes+engineering+college/@28.6337883,77.3761328,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x390cee3d2df45167:0x3942e55a855965a9!2m2!1d77.4461731!2d28.6338063">ABES ENGINEERING COLLEGE ,Campus -1, 19th KM Stone, NH-24, Ghaziabad, Uttar Pradesh .201009</a></p>
+      <p><i class="fa fa-phone fa-fw w3-text-black w3-xlarge w3-margin-right"></i> Phone:
+          <ul>
+            <li>9711669029 ( <b>Mr.RITIN BEHL</b> ) </li>
+            <li>9891003852 ( <b>Mr.PRABHAT SINGH</b> ) </li>
+          </ul> 
+      </p>
+      <p><i class="fa fa-envelope fa-fw w3-text-black w3-xlarge w3-margin-right"></i> Email: 
+           <ul>
+             <li>
+               aktusportsfest@gmail.com
+             </li>
+             <li>
+               sports@abes.ac.in
+             </li>
+           </ul>
+      </p>
+    </div><br>
+ </div>
+
+<!--medium screen-->
+ <div class="w3-padding-48 w3-hide-small w3-hide-medium w3-hide-large w3-content w3-text-black" id="contact">
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-allerta w3-wide w3-xlarge" style="margin-top: 50px;">Lets get in touch. Send me a message:</p>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xlarge w3-margin-right"></i>
+      <a href="https://www.google.co.in/maps/dir/''/abes+engineering+college/@28.6337883,77.3761328,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x390cee3d2df45167:0x3942e55a855965a9!2m2!1d77.4461731!2d28.6338063">ABES ENGINEERING COLLEGE ,Campus -1, 19th KM Stone, NH-24, Ghaziabad, Uttar Pradesh .201009</a></p>
+      <p><i class="fa fa-phone fa-fw w3-text-black w3-xlarge w3-margin-right"></i> Phone:
+          <ul>
+            <li>9711669029 ( <b>Mr.RITIN BEHL</b> ) </li>
+            <li>9891003852 ( <b>Mr.PRABHAT SINGH</b> ) </li>
+          </ul> 
+      </p>
+      <p><i class="fa fa-envelope fa-fw w3-text-black w3-xlarge w3-margin-right"></i> Email: 
+           <ul>
+             <li>
+               aktusportsfest@gmail.com
+             </li>
+             <li>
+               sports@abes.ac.in
+             </li>
+           </ul>
+      </p>
+    </div><br>
+ </div>
+
+
+ <!--small devices-->
+   <div class="w3-hide-large w3-padding-32 w3-content w3-text-black" id="contact" style="margin-left: 40px; margin-right: 40px;">
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-allerta w3-wide w3-large" style="margin-top: 50px;">Lets get in touch. Send me a message:</p>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-medium w3-margin-right" ></i>
+      <a href="https://www.google.co.in/maps/dir/''/abes+engineering+college/@28.6337883,77.3761328,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x390cee3d2df45167:0x3942e55a855965a9!2m2!1d77.4461731!2d28.6338063">ABES ENGINEERING COLLEGE ,Campus -1, 19th KM Stone, NH-24, Ghaziabad, Uttar Pradesh .201009</a></p>
+      <p><i class="fa fa-phone fa-fw w3-text-black w3-large w3-margin-right"></i> Phone:
+          <ul>
+            <li>9711669029 ( <b>Mr.RITIN BEHL</b> ) </li>
+            <li>9891003852 ( <b>Mr.PRABHAT SINGH</b> ) </li>
+          </ul> 
+      </p>
+      <p><i class="fa fa-envelope fa-fw w3-text-black w3-large w3-margin-right"></i> Email: 
+           <ul>
+             <li>
+               aktusportsfest@gmail.com
+             </li>
+             <li>
+               sports@abes.ac.in
+             </li>
+           </ul>
+      </p>
+    </div><br>
+
+  <!-- End Contact Section -->
+  </div>
+</body>
+<!-- Footer -->
+<footer class="w3-center w3-text-black w3-grey w3-padding-large w3-opacity ">
+     <p class=" w3-medium  w3-allerta ">Designed by : <span class="w3-slim w3-myfont">HARSHIT PANDEY</span></p>
+    <p class=" w3-medium">harshitpandy678@gmail.com</p>
+</footer>
+ 
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+var modal6 = document.getElementById('myModal6');
+var modal7 = document.getElementById('myModal7');
+var modal9 = document.getElementById('myModal9');
+var modal10 = document.getElementById('myModal10');
+// Get the button that opens the modal
+var btn  = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+var btn4 = document.getElementById("myBtn4");
+var btn5 = document.getElementById("myBtn5");
+var btn6 = document.getElementById("myBtn6");
+var btn7 = document.getElementById("myBtn7");
+var btn9 = document.getElementById('floating-button');
+var btn10 = document.getElementById('floating-button-1');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close1")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
+var span5 = document.getElementsByClassName("close5")[0];
+var span6 = document.getElementsByClassName("close6")[0];
+var span7 = document.getElementsByClassName("close7")[0];
+var span9 = document.getElementsByClassName("close9")[0];
+var span10 = document.getElementsByClassName("close10")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+
+btn6.onclick = function() {
+    modal6.style.display = "block";
+} 
+
+
+btn7.onclick = function() {
+    modal7.style.display = "block";
+} 
+
+btn9.onclick = function() {
+    modal9.style.display = "block";
+} 
+
+
+btn10.onclick = function() {
+    modal10.style.display = "block";
+} 
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+span4.onclick = function() {
+    modal4.style.display = "none";
+}
+span5.onclick = function() {
+    modal5.style.display = "none";
+}
+span6.onclick = function() {
+    modal6.style.display = "none";
+}
+
+span7.onclick = function() {
+    modal7.style.display = "none";
+}
+
+span9.onclick = function() {
+    modal9.style.display = "none";
+}
+
+
+span10.onclick = function() {
+    modal10.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) 
+{
+    if (event.target == modal)
+     {
+        modal.style.display = "none";
+    }
+
+
+    else if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+
+    else if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+
+    else if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+
+    else if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+
+
+    else if (event.target == modal5) {
+        modal5.style.display = "none";
+    }
+
+
+    else if (event.target == modal6) {
+        modal6.style.display = "none";
+    }
+
+    else if (event.target == modal7) {
+        modal7.style.display = "none";
+    }
+
+    else if (event.target == modal9) {
+        modal9.style.display = "none";
+    }
+
+    else if (event.target == modal10) {
+        modal10.style.display = "none";
+    }
+  }
+
+</script>
+
+
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-light-grey";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-light-grey", "");
+    }
+}
+
+</script>
+
+</body>
+</html>
